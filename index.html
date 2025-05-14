@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sally Otieno's portfolio showcasing expertise in data analysis, SQL, Python, and data visualization. Discover projects, skills, and contact information." />
+  <meta name="keywords"
+    content="Data Analyst, Data Visualization, SQL, Python, Tableau, Data Cleaning, Healthcare Analytics, Sally Otieno" />
+  <meta name="author" content="Sally Otieno" />
+  <title>Sally Otieno | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Sally <span>Otieno</span> </div>
+      <button id="menu-toggle" class="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="tagline"></span>
+        <h1>Sally <span class="highlight">Otieno</span></h1>
+        <p>Transforming complex data into actionable insights through SQL, Python, and advanced visualization
+          techniques. I help organizations make data-driven decisions that drive success.</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-placeholder">
+        </div>
+        <div class="experience-badge">
+          <strong>5+</strong>
+          <span>Years Exp.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-description">
+        Discover my data analysis projects showcasing SQL queries, visualization techniques, and healthcare analytics
+        expertise.
+      </p>
+
+      <div class="filter-scroll-container">
+        <button class="scroll-btn left">&#8249;</button>
+
+        <div class="filter-wrapper">
+          <div class="filter-menu">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+            <button class="filter-btn" data-filter="data-cleaning">Data Cleaning</button>
+            <button class="filter-btn" data-filter="healthcare-analytics">Healthcare Analytics</button>
+            <button class="filter-btn" data-filter="sql">SQL</button>
+            <button class="filter-btn" data-filter="tableau">Tableau</button>
+          </div>
+        </div>
+
+        <button class="scroll-btn right">&#8250;</button>
+      </div>
+
+
+      <div class="project-cards">
+        <div class="card" data-category="data-cleaning sql tableau">
+          <div class="card-body">
+            <h3>Housing Levy Analysis</h3>
+            <div class="tags"></div>
+            <p>Analyzed housing data from Kaggle containing SQFT, prices, building dates, and locations. Performed data
+              cleaning and exploration to answer business queries using SQL.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/SallyOti/Housing-Levy-dataset" class="btn small">GitHub</a>
+            <a href="https://public.tableau.com/app/profile/sally.otieno/viz/housingdataset2014-2015/Dashboard1"
+              class="btn small">Tableau</a>
+          </div>
+        </div>
+
+        <div class="card" data-category="healthcare-analytics sql tableau">
+          <div class="card-body">
+            <h3>Massachusetts General Hospital Dataset</h3>
+            <div class="tags"></div>
+            <p>Explored a dataset of 1,000 patients analyzing demographics, insurance coverage, and medical encounters.
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/SallyOti/Healthcare-portfolio-project" class="btn small">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" data-category="data-analysis sql">
+          <div class="card-body">
+            <h3>Hospital General Information</h3>
+            <div class="tags"> </div>
+            <p>Collected and analyzed hospital data from Data.CMS.GOV including addresses, phone numbers, and overall
+              ratings.</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/SallyOti/Healthcare-Hospitals" class="btn small">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Add New Project Card Here -->
+
+
+      </div>
+
+      <div class="project-controls">
+        <div id="pagination" class="pagination"></div>
+        <p id="noResultsMsg" style="display:none; text-align:center; margin-top:2rem;">No projects found.</p>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Skills Section -->
+
+  <section class="skills-section sleek two-columns" id="skills">
+
+    <h2 class="section-title">Skills & Technologies</h2>
+    <p class="section-subtitle">A refined blend of analytical and technical skills that fuel data-driven success.</p>
+
+    <div class="skills-wrapper">
+      <div class="skill-category">
+        <h3><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+        <div class="skills-tags">
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>Pivot Tables</span>
+          <span>A/B Testing</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming & Technical</h3>
+        <div class="skills-tags">
+          <span>SQL</span>
+          <span>Python</span>
+          <span>R</span>
+          <span>MySQL</span>
+          <span>Data Cleaning</span>
+          <span>Transformation</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-briefcase"></i> Business Tools</h3>
+        <div class="skills-tags">
+          <span>Salesforce</span>
+          <span>Zendesk</span>
+          <span>Airtable</span>
+          <span>Omnichannel</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3><i class="fas fa-users"></i> Collaboration</h3>
+        <div class="skills-tags">
+          <span>Slack</span>
+          <span>Zoom</span>
+          <span>Asana</span>
+          <span>Teamwork</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="approach-section">
+      <h3>My Analytical Approach</h3>
+      <div class="approach-steps">
+        <div class="approach-step">
+          <i class="fas fa-database"></i>
+          <h4>Data Collection</h4>
+          <p>Gathering reliable, clean data from diverse sources.</p>
+        </div>
+        <div class="approach-step">
+          <i class="fas fa-chart-line"></i>
+          <h4>Visualization</h4>
+          <p>Creating dashboards that highlight critical insights.</p>
+        </div>
+        <div class="approach-step">
+          <i class="fas fa-lightbulb"></i>
+          <h4>Insights</h4>
+          <p>Converting data into actionable business strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-description">
+        Have a project in mind or want to discuss data analytics opportunities? I'd love to hear from you!
+      </p>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>Feel free to reach out for collaborations or just a chat.</p>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:arachisally19@gmail.com">arachisally19@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+254712210349">+254 712 210 349</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/sally-otieno-936937121/" target="_blank">Sally Otieno</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+
+          <form class="contact-form" onsubmit="return false;">
+            <h3>Send a Message</h3>
+            <p>
+              This form is inactive. Please contact me directly at:
+              <a href="mailto:arachisally19@gmail.com">arachisally19@gmail.com</a>
+            </p>
+            <input type="text" placeholder="Your name" disabled>
+            <input type="email" placeholder="Your email" disabled>
+            <textarea rows="5" placeholder="Let me know how I can help..." disabled></textarea>
+            <button type="submit" disabled>Send Message</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/254712210349" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="compact-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2>Sally <span>Otieno</span></h2>
+        <p>Data Analyst & Visualization Expert</p>
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:arachisally19@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/sally-otieno-936937121/" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/SallyOti" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <p>&copy; <span id="year"></span> Sally Otieno. All rights reserved.</p>
+      <a href="#top" class="back-to-top" title="Back to top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
